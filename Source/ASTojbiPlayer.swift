@@ -9,35 +9,20 @@ import Foundation
 import AVFoundation
 
 class ASTojbiPlayer: NSObject {
-    private var audioPlayer: AVPlayer?
+    var player: AVAudioPlayer?
     
-    init(_ string: String) {
-        guard let url = URL(string: string) else {
-            print("error to load the mp3 file")
-            return
-        }
+    func playSound() {
+        let url = ASTojbiPlayer.podsBundle.url(forResource: "beep1", withExtension: "mp3")!
         do {
-            audioPlayer = try AVPlayer(url: url as URL)
-        }catch {
-            print("audio file error")
+            player = try AVAudioPlayer(contentsOf: url)
+            guard let player = player else { return }
+
+            player.prepareToPlay()
+            player.play()
+
+        } catch let error as NSError {
+            print(error.description)
         }
-    }
-    
-    init(_ forResource: String, _ withExtension: String) {
-        guard let url = ASTojbiPlayer.podsBundle.url(forResource: forResource, withExtension: withExtension) else {
-            print("error to get the mp3 file")
-            return
-        }
-        do {
-            audioPlayer = try AVPlayer(url: url)
-        }catch {
-            print("audio file error")
-        }
-    }
-    
-    func play() {
-        print("audioPlayer: \(audioPlayer)")
-        audioPlayer?.play()
     }
     
     private static var podsBundle: Bundle {

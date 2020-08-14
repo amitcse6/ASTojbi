@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 @available(iOS 9.0, *)
 class ASTojbi: UIView {
@@ -33,7 +34,6 @@ class ASTojbi: UIView {
     var isTouchEnable=true
     var padding: CGFloat = 0
     var resetBoardInterval: TimeInterval = 0.5
-    var tojbiPlayer: ASTojbiPlayer?
 }
 
 @available(iOS 9.0, *)
@@ -86,9 +86,9 @@ extension ASTojbi {
                 self.animationStart(_start: _start, _index: _index+1, _imageView:_imageView, _delay: _delay)
             }else{
                 if self.soundButton.tag == 1 {
-                    //AudioServicesPlaySystemSound (systemSoundID)
-                    //self.tojbiPlayer = ASTojbiPlayer("beep1", "mp3")
-                    //self.tojbiPlayer?.play()
+                    let systemSoundID: SystemSoundID = 1016
+                    AudioServicesPlaySystemSound (systemSoundID)
+                    //ASTojbiPlayer().playSound()
                 }
                 self.rearrangeTag()
             }
