@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 @available(iOS 9.0, *)
-class ASTojbiClassic: ASTojbi { 
+public class ASTojbiClassic: ASTojbi { 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.initialize()

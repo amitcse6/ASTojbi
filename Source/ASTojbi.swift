@@ -9,7 +9,7 @@ import UIKit
 import AVFoundation
 
 @available(iOS 9.0, *)
-class ASTojbi: UIView {
+public class ASTojbi: UIView {
     var storeBack:UIView!
     var backImageView: UIImageView!
     var tojbiLabel:UILabel!

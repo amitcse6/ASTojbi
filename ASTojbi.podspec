@@ -38,7 +38,7 @@ Pod::Spec.new do |s|
   }
   
    s.resource_bundles = {
-     'ASTojbi' => ['ASTojbi/Assets/*.png', 'Source/Resources/Assets.xcassets', 'Source/Resources/Sound/*.mp3'
+     'ASTojbi' => ['Source/Resources/Assets.xcassets', 'Source/Resources/Sound/*.mp3']
    }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
