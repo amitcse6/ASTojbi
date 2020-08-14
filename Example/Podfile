@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ASTojbi_Example' do
+  pod 'ASTojbi', :path => '../'
+
+  target 'ASTojbi_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase' , '~> 2.1.4'
+  end
+end
