@@ -1,0 +1,6 @@
+framework module ASTojbi {
+  umbrella header "ASTojbi-umbrella.h"
+
+  export *
+  module * { export * }
+}

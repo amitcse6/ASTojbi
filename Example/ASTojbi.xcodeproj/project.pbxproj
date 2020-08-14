@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28750AC324E6CD71004C23CF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28750AC224E6CD71004C23CF /* AVFoundation.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28750AC224E6CD71004C23CF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		3CF25322F7CC77CA10C51604 /* Pods_ASTojbi_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ASTojbi_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		551E940ECBFFD8297F2C14B5 /* Pods-ASTojbi_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASTojbi_Example.debug.xcconfig"; path = "Target Support Files/Pods-ASTojbi_Example/Pods-ASTojbi_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		55E2A82E55F316B5C1F60853 /* Pods-ASTojbi_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASTojbi_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ASTojbi_Tests/Pods-ASTojbi_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -41,12 +43,12 @@
 		607FACE51AFB9204008FA782 /* ASTojbi_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ASTojbi_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		8F6052F7A8A43414B19F56C2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		9236F7BA67157563834A9B38 /* ASTojbi.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ASTojbi.podspec; path = ../ASTojbi.podspec; sourceTree = "<group>"; };
+		8F6052F7A8A43414B19F56C2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		9236F7BA67157563834A9B38 /* ASTojbi.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ASTojbi.podspec; path = ../ASTojbi.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9C37983BC15CBFB5FD116C75 /* Pods-ASTojbi_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASTojbi_Tests.release.xcconfig"; path = "Target Support Files/Pods-ASTojbi_Tests/Pods-ASTojbi_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B7BE1152600F7F0A0FB2049B /* Pods_ASTojbi_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ASTojbi_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3689255BB269B5828932C17 /* Pods-ASTojbi_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASTojbi_Example.release.xcconfig"; path = "Target Support Files/Pods-ASTojbi_Example/Pods-ASTojbi_Example.release.xcconfig"; sourceTree = "<group>"; };
-		FA358454A443326D2278A663 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		FA358454A443326D2278A663 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28750AC324E6CD71004C23CF /* AVFoundation.framework in Frameworks */,
 				AC5DF4595307319FACCE6DF3 /* Pods_ASTojbi_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,6 +75,7 @@
 		2889C0B220470662EE4EF203 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				28750AC224E6CD71004C23CF /* AVFoundation.framework */,
 				B7BE1152600F7F0A0FB2049B /* Pods_ASTojbi_Example.framework */,
 				3CF25322F7CC77CA10C51604 /* Pods_ASTojbi_Tests.framework */,
 			);
@@ -86,7 +90,6 @@
 				55E2A82E55F316B5C1F60853 /* Pods-ASTojbi_Tests.debug.xcconfig */,
 				9C37983BC15CBFB5FD116C75 /* Pods-ASTojbi_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -228,6 +231,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

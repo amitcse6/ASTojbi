@@ -5,6 +5,11 @@
 [![License](https://img.shields.io/cocoapods/l/ASTojbi.svg?style=flat)](https://cocoapods.org/pods/ASTojbi)
 [![Platform](https://img.shields.io/cocoapods/p/ASTojbi.svg?style=flat)](https://cocoapods.org/pods/ASTojbi)
 
+
+Screenshots
+---------
+![ASTojbi Screenshots](astojbi_screenshot.gif)
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
