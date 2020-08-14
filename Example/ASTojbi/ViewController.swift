@@ -10,6 +10,8 @@ import UIKit
 import ASTojbi
 
 class ViewController: UIViewController {
+    
+    let tojbi = ASTojbiClassic()
 
     override func viewDidLoad() {
         super.viewDidLoad()
